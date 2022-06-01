@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CouncilApp.PaynowPayment"
+             xmlns:fa="clr-namespace:MobileAppX.Resources.Fonts.FontAwesome">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Frame Padding="15" BackgroundColor="#3783D3" Margin="20,19, 20, 20" CornerRadius="5" HorizontalOptions="CenterAndExpand" WidthRequest="250">
+                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="PAYNOW" FontSize="20" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
+                    <Label Text="00055xxxxxx" FontSize="15" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" x:Name="lblAccountNumber" />
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="15" BackgroundColor="#BFD5EB" Margin="20,19, 20, 20" CornerRadius="5" HorizontalOptions="CenterAndExpand" WidthRequest="250">
+                <StackLayout>
+                    <Entry Placeholder="phone number" FontSize="15" x:Name="entryPhone" />
+                    <StackLayout Orientation="Horizontal" >
+                        <Entry Placeholder="amount" FontSize="15" x:Name="entryAmount" HorizontalOptions="FillAndExpand"/>
+                        <Label Text="zwl" FontSize="15" Margin="0" HorizontalOptions="End"/>
+                    </StackLayout>
+                    <Entry Placeholder="email" FontSize="15" x:Name="entryEmail" />
+                </StackLayout>
+            </Frame>
+
+            <Frame Padding="15" BackgroundColor="#BFD5EB" Margin="20,19, 20, 20" CornerRadius="5" HorizontalOptions="CenterAndExpand" WidthRequest="250" x:Name="stackLtPaymentSuccess">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Payment successful" FontSize="15" HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                    <Button Padding="0" Margin="0" BorderWidth="0" WidthRequest="35" HeightRequest="30" BackgroundColor="#BFD5EB" IsEnabled="False" >
+                        <Button.ImageSource>
+                            <FontImageSource FontFamily="FASolid" Glyph="{x:Static fa:FontAwesomeIcons.CheckCircle}" Size="Large" Color="#3783D3" />
+                        </Button.ImageSource>
+                    </Button>
+                </StackLayout>
+            </Frame>
+            
+            <Label Text="Payment failed." TextColor="Red" HorizontalOptions="Center" x:Name="lblPaymentFail"/>
+            <Label TextColor="Red" HorizontalOptions="Center" x:Name="lblWarning" />
+
+            <Button Text="PAY" HorizontalOptions="Center"  BackgroundColor="#3783D3" Clicked="PayButtonClicked" WidthRequest="250" HeightRequest="40" CornerRadius="20" VerticalOptions="EndAndExpand" Margin="0,0,0,40"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,13 @@
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\bin\Debug\netstandard2.1\CouncilContextLib.deps.json
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\bin\Debug\netstandard2.1\CouncilContextLib.dll
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\bin\Debug\netstandard2.1\CouncilContextLib.pdb
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\bin\Debug\netstandard2.1\CouncilEntitiesLib.dll
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\bin\Debug\netstandard2.1\CouncilEntitiesLib.pdb
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\obj\Debug\netstandard2.1\CouncilContextLib.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\obj\Debug\netstandard2.1\CouncilContextLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\obj\Debug\netstandard2.1\CouncilContextLib.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\obj\Debug\netstandard2.1\CouncilContextLib.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\obj\Debug\netstandard2.1\CouncilContextLib.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\obj\Debug\netstandard2.1\CouncilContextLib.csproj.CopyComplete
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\obj\Debug\netstandard2.1\CouncilContextLib.dll
+C:\Users\lenovo\Desktop\HIT200 Project\CouncilContextLib\obj\Debug\netstandard2.1\CouncilContextLib.pdb

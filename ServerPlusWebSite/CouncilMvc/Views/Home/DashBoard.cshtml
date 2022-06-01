@@ -1,0 +1,28 @@
+@model CouncilMvc.Models.HomeDashBoardViewModel
+@{
+    ViewData["Title"] = "DashBoard";
+}
+
+<div>
+    <H2>Chats</H2>
+    <ol class="list-group list-group-numbered">
+        @foreach (var item in Model.Accounts)
+        {
+                <a asp-controller="Home" asp-action="ChatDetail" asp-route-id="@item.AccountID" class="list-group-item list-group-item-action">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+
+                        <div class="ms-2 me-auto">
+                            <div class="fw-bold"><b>@item.AccountNumber</b></div>
+                        @if (item.Messages.Count > 0)
+                        {
+                            @item.Messages.FirstOrDefault().Content
+                        }
+                        </div>
+                        <span class="badge bg-primary rounded-pill">@item.Messages.Count</span>
+                    </li>
+                </a>
+                }
+        
+    </ol>
+
+</div>

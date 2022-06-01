@@ -1,0 +1,3 @@
+- This system has a client-server architecture i.e a Cross Platform Mobile application built with Xamarin.Forms
+- and a server-side application built with AspnetCore MVC including a simple website for receiving and replying to 
+- messages.

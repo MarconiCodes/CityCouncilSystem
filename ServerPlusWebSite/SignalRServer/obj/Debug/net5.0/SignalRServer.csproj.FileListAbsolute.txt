@@ -1,0 +1,52 @@
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\appsettings.json
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\SignalRServer.exe
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\SignalRServer.deps.json
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\SignalRServer.runtimeconfig.json
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\SignalRServer.runtimeconfig.dev.json
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\SignalRServer.dll
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\ref\SignalRServer.dll
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\SignalRServer.pdb
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\bin\Debug\net5.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\staticwebassets\SignalRServer.StaticWebAssets.Manifest.cache
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\staticwebassets\SignalRServer.StaticWebAssets.xml
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\scopedcss\bundle\SignalRServer.styles.css
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.RazorTargetAssemblyInfo.cache
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.csproj.CopyComplete
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.dll
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\ref\SignalRServer.dll
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.pdb
+C:\Users\lenovo\Desktop\ASP.NET CORE Projects\SignalRServer\obj\Debug\net5.0\SignalRServer.genruntimeconfig.cache
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\appsettings.Development.json
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\appsettings.json
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\SignalRServer.exe
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\SignalRServer.deps.json
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\SignalRServer.runtimeconfig.json
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\SignalRServer.runtimeconfig.dev.json
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\SignalRServer.dll
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\ref\SignalRServer.dll
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\SignalRServer.pdb
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\users\lenovo\desktop\hit200 project\SignalRServer\bin\Debug\net5.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.csproj.AssemblyReference.cache
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.AssemblyInfoInputs.cache
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.AssemblyInfo.cs
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.csproj.CoreCompileInputs.cache
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.MvcApplicationPartsAssemblyInfo.cache
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\staticwebassets\SignalRServer.StaticWebAssets.Manifest.cache
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\staticwebassets\SignalRServer.StaticWebAssets.xml
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\scopedcss\bundle\SignalRServer.styles.css
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.RazorTargetAssemblyInfo.cache
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.csproj.CopyComplete
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.dll
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\ref\SignalRServer.dll
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.pdb
+C:\users\lenovo\desktop\hit200 project\SignalRServer\obj\Debug\net5.0\SignalRServer.genruntimeconfig.cache

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CouncilApp.Register">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Column="0">
+                        <Entry Placeholder="Account number" FontSize="16" x:Name="AccountNumberEntry"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Entry Placeholder="first name" FontSize="16" x:Name="FirstNameEntry"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <Entry Placeholder="last name" FontSize="16" x:Name="LastNameEntry"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3">
+                        <Entry Placeholder="email" FontSize="16" x:Name="EmailEntry"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="4">
+                        <Entry Placeholder="phone number" FontSize="16" x:Name="PhonenumberEntry"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="5">
+                        <Entry Placeholder="password" FontSize="16" x:Name="PasswordEntry"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="6">
+                        <Entry Placeholder=" confirm password" FontSize="16" x:Name="ConfirmPasswordEntry" TextChanged="ConfirmPasswordEntry_TextChanged"/>
+                    </StackLayout>
+                    <Label Grid.Row="7" Text="Passwords do not match" TextColor="DarkRed" IsVisible="false" x:Name="lblPasswordWarning"/>
+                </Grid>
+
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Button Text="REGISTER" HorizontalOptions="CenterAndExpand" BackgroundColor="#3783D3"
+                        TextColor="White" WidthRequest="300" HeightRequest="50" CornerRadius="30"
+                         x:Name="Next" Clicked="RegisterBtnClicked"/>
+
+                    <Button HeightRequest="40" Text="Already have an account ? login" TextColor="blue" BackgroundColor="WhiteSmoke" Clicked="BtnLoginClicked"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CouncilApp.TabbedPage1"
+            xmlns:fa="clr-namespace:MobileAppX.Resources.Fonts.FontAwesome"
+            SelectedTabColor="#E4E4E4"
+            NavigationPage.HasBackButton="false"
+            NavigationPage.HasNavigationBar="False" 
+            Appearing="UpdateUI">
+
+    <!--DASHBOARD PAGE-->
+    <ContentPage BackgroundColor="#E4E4E4" >
+        <ContentPage.IconImageSource>
+            <FontImageSource FontFamily="FASolid" Glyph="{x:Static fa:FontAwesomeIcons.CreditCard}" Size="Large" Color="Black"/>
+        </ContentPage.IconImageSource>
+        <RefreshView RefreshColor="#3783D3" x:Name="ThaRefreshView">
+            <ScrollView >
+                <StackLayout HeightRequest="650">
+                    <Frame Padding="15" BackgroundColor="WhiteSmoke" Margin="30,19, 20, 10" CornerRadius="5" HorizontalOptions="CenterAndExpand" WidthRequest="250">
+                        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Label Text="Mr X Xxxx" FontSize="20" x:Name="lblName" TextColor="Black" />
+                            <Label Text="00055xxxxxx" FontSize="13" TextColor="Black" HorizontalOptions="CenterAndExpand" x:Name="lblAccountNumber"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Padding="15" BackgroundColor="WhiteSmoke" Margin="30,0, 20, 10" CornerRadius="5" HorizontalOptions="CenterAndExpand" WidthRequest="250">
+                        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Label Text="Account Balance" TextColor="Black" FontSize="20" />
+                            <Label Text="{Binding Balance}" TextColor="Black" FontSize="20" HorizontalOptions="CenterAndExpand" x:Name="lblAccountBalance" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame Padding="20" BackgroundColor="White" Margin="30,0, 20, 10" CornerRadius="5" HorizontalOptions="CenterAndExpand" WidthRequest="250" HeightRequest="250">
+                        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" HeightRequest="210">
+                            <Label Text="Make a Payment" FontSize="20" TextColor="Black" HorizontalOptions="CenterAndExpand"  />
+                            <Label Text="use paynow:" FontSize="15" TextColor="Black" HorizontalOptions="CenterAndExpand" />
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Frame Padding="0" IsClippedToBounds="True" HeightRequest="60" WidthRequest="200" Margin="0, 20, 0, 0" >
+                                    <Image  Aspect="AspectFill" Source="https://th.bing.com/th/id/R.f9867822a244e22dd8a5c43e85977378?rik=rcdmwb3LxIoL2g&amp;riu=http%3a%2f%2fwww.techzim.co.zw%2fwp-content%2fuploads%2f2014%2f06%2fpaynow-logo-th.png&amp;ehk=p3XgI5hyhyKHkGBlbeoAOQw8%2fjqD1KpZusn3HIC9x9c%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0">
+                                        <Image.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                        </Image.GestureRecognizers>
+                                    </Image>
+                                </Frame>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </RefreshView>
+    </ContentPage>
+
+    <!--MESSAGES PAGE-->
+    <ContentPage >
+        <ContentPage.IconImageSource>
+            <FontImageSource FontFamily="FASolid" Glyph="{x:Static fa:FontAwesomeIcons.Comments}" Size="Large" Color="Black"/>
+        </ContentPage.IconImageSource>
+        <StackLayout>
+            <ListView x:Name="ThaListView" ItemsSource="{Binding Messages}" ItemTapped="LstViewMessageItemTapped" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Padding="10,10,5,15" >
+                                <Frame CornerRadius="5" Padding="0">
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="Start" VerticalOptions="FillAndExpand" BackgroundColor="LightGray" WidthRequest="200" Padding="0" Margin="0">
+                                        <Label Text="{Binding Sender}" FontSize="15" TextColor="Black" FontAttributes="Bold" Padding="5"/>
+                                        <Label Text="{Binding Content}" TextColor="Black" VerticalOptions="FillAndExpand" FontSize="12" Padding="5,0,2,5" />
+                                    </StackLayout>
+                                </Frame>
+                                <Label Text="{Binding DateSent}" HorizontalOptions="EndAndExpand" TextColor="Black" VerticalOptions="Start" WidthRequest="60" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Frame Padding="0" Margin="5,0,5,5" CornerRadius="30" BorderColor="#222233">
+                <StackLayout Orientation="Horizontal" BackgroundColor="#EEEFEF" Padding="10, 5, 5, 2" Margin="0" HeightRequest="40">
+                    <Entry x:Name="MessageEntry"  Placeholder="Text Message" HorizontalOptions="FillAndExpand" FontSize="16"/>
+                    <Frame Padding="0" Margin="0, 0, 5, 5" HorizontalOptions="End" CornerRadius="30">
+                        <Button Padding="0" Margin="0" BorderWidth="0" WidthRequest="35" HeightRequest="30" BackgroundColor="#3783D3" Clicked="SendButtonClicked">
+                            <Button.ImageSource>
+                                <FontImageSource FontFamily="FASolid" Glyph="{x:Static fa:FontAwesomeIcons.PaperPlane}" Size="Medium" Color="GhostWhite" />
+                            </Button.ImageSource>
+                        </Button>
+                    </Frame>
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+    </ContentPage>
+
+    <!--BILLS PAGE-->
+    <ContentPage >
+        <ContentPage.IconImageSource>
+            <FontImageSource FontFamily="FASolid" Glyph="{x:Static fa:FontAwesomeIcons.FileInvoice}" Size="Large" Color="Black"/>
+        </ContentPage.IconImageSource>
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <Frame CornerRadius="5" Padding="0" Margin="10, 20, 10, 20">
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#EEEFEF"  Padding="5" Margin="0">
+                    <Label Text="Bill Statements" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" />
+                </StackLayout>
+            </Frame>
+            <ListView x:Name="BListView" ItemsSource="{Binding Statements}" ItemTapped="LstViewStatementItemTapped" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding DateSent}" FontSize="12" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                                <StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal" Padding="10,1,5,15" >
+                                    <Frame CornerRadius="5" Padding="0" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#EEEFEF" Padding="4, 0, 3, 6" Margin="0">
+                                            <StackLayout Orientation="Horizontal" >
+                                                <Label Text="{Binding Month}" FontSize="15" TextColor="Black" FontAttributes="Bold" Padding="2,0,0,0"/>
+                                                <Label Text="{Binding Timesent}" TextColor="Black" FontSize="12" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                                            </StackLayout>
+
+                                            <StackLayout Orientation="Horizontal" >
+
+                                                <Frame CornerRadius="5" Padding="0" HorizontalOptions="StartAndExpand" x:Name="xxv">
+                                                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="3, 6, 6, 1" BackgroundColor="White">
+                                                        <Button Padding="0" Margin="0" BorderWidth="0" WidthRequest="35" HeightRequest="30" BackgroundColor="White" VerticalOptions="CenterAndExpand">
+                                                            <Button.ImageSource>
+                                                                <FontImageSource FontFamily="FASolid" Glyph="{x:Static fa:FontAwesomeIcons.FileAlt}" Size="Large" Color="#D61B2B" />
+                                                            </Button.ImageSource>
+                                                        </Button>
+                                                        <Label Text="{Binding FileName}" TextColor="Black" FontSize="15"  Padding="0" Margin="0"/>
+                                                    </StackLayout>
+                                                </Frame>
+                                                <Button Clicked="BtnDownloadFileClicked" IsVisible="{Binding IsNotDownloaded}" Padding="0" Margin="0" BorderWidth="0" WidthRequest="35" HeightRequest="30" BackgroundColor="#EEEFEF" BindingContext="{Binding .}" >
+                                                    <Button.ImageSource>
+                                                        <FontImageSource FontFamily="FARegular" Glyph="{x:Static fa:FontAwesomeIcons.ArrowAltCircleDown}" Size="Large" Color="#3783D3"/>
+                                                    </Button.ImageSource>
+                                                </Button>
+                                            </StackLayout>
+
+
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+
+    <!--HISTORY PAGE-->
+    <ContentPage >
+        <ContentPage.IconImageSource>
+            <FontImageSource FontFamily="FASolid" Glyph="&#xf1da;" Size="Large" Color="Black"/>
+        </ContentPage.IconImageSource>
+        <StackLayout>
+            <Frame CornerRadius="5" Padding="0" Margin="25, 20, 20, 20">
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#EEEFEF"  Padding="5" Margin="0">
+                    <Label Text="histrory of transactions" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold" TextColor="Black" />
+                </StackLayout>
+            </Frame>
+            <!--<Label Text="History Page" FontSize="30" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />-->
+            <ListView x:Name="LVhistory" ItemsSource="{Binding Receipts}" ItemTapped="LstViewReceiptItemTapped" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HorizontalOptions="CenterAndExpand" Orientation="Horizontal" Padding="10,10,5,15" >
+                                <Frame CornerRadius="5" Padding="0">
+
+                                    <StackLayout Orientation="Vertical" HorizontalOptions="Start" VerticalOptions="FillAndExpand" BackgroundColor="#EEEFEF" WidthRequest="300" Padding="5" Margin="0">
+                                        <Label Text="{Binding Date}" FontSize="12" TextColor="Black" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand" />
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Receipt number :" FontSize="15" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" />
+                                            <Label Text="{Binding ReceiptNumber}" FontSize="15" TextColor="Black" FontAttributes="Bold" HorizontalOptions="EndAndExpand"  Padding="0"/>
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Payment Method :" FontSize="15" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" />
+                                            <Label Text="{Binding PaymentMethod}" FontSize="15" TextColor="Black" FontAttributes="Bold"  Padding="0" HorizontalOptions="EndAndExpand" />
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="Amount Paid :" FontSize="15" TextColor="Black" FontAttributes="Bold"  HorizontalOptions="Start" VerticalOptions="Start" />
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                                <Label Text="ZWL" FontSize="15" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center"     Padding="0" Margin="0" />
+                                                <Label Text="{Binding AmountPaid}" FontSize="15" TextColor="Black" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Padding="0" Margin="0" />
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                            <Label Text="Remaining Balance :" FontSize="15" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Start" />
+                                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                                <Label Text="ZWL" FontSize="15" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" VerticalOptions="Center"     Padding="0" Margin="0" />
+                                                <Label Text="{Binding RemainingBalance}" TextColor="Black" FontSize="15" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Padding="0" Margin="0" />
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+
+    <!--<FontImageSource FontFamily="FASolid" Glyph="{x:Static fa:FontAwesomeIcons.PaperPlane" Size="Large" Color="Black"/>-->
+</TabbedPage>
