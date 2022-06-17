@@ -72,7 +72,8 @@ namespace CouncilMvc.Controllers
             }
             var model = new HomeChatDetailViewModel
             {
-                Messages = db.Messages.Where(m => m.AccountID == id).Include(x => x.Account)
+                Messages = db.Messages.Where(m => m.AccountID == id).OrderByDescending(m => m.MessageID).Include(x => x.Account),
+                User = db.Users.Where(u => u.AccountID == id).Single()
             };
 
             if(model == null)
@@ -86,6 +87,10 @@ namespace CouncilMvc.Controllers
         public IActionResult SendPrivateMessage(Message message) //string id, string userInput, string message
         {
             var accID = message.AccountID;
+            if(message.Content == null || message.Content == ""){
+                return Redirect($"/Home/ChatDetail/{accID}");
+            }
+            
             Account account = db.Accounts.Include(a => a.User).Where(a => a.AccountID == accID).SingleOrDefault();
             string connectionID = account.User.ConnectionID;
 

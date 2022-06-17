@@ -8,5 +8,6 @@ namespace CouncilMvc.Models
     public class HomeChatDetailViewModel
     {
         public IQueryable<Message> Messages { get; set; }
+        public Manex.Shared.User User { get; set; }
     }
 }

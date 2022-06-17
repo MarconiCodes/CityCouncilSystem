@@ -3,52 +3,43 @@
     ViewData["Title"] = "Chat Detail";
 }
 
-<h1>@Model.Messages.FirstOrDefault().Account.AccountNumber</h1>
+<h2>@Model.User.FirstName @Model.User.LastName <span> &#64;@Model.Messages.FirstOrDefault().Account.AccountNumber</span></h2>
 
-<div class="row">
-    <div class="col-xs-6">
+<div class="container-m">
+    <div class="input-message">
+        <form action="/Home/SendPrivateMessage" method="post">
+            <input type="text" name="AccountID" value="@Model.Messages.FirstOrDefault().Account.AccountID" asp-controller="Home" asp-action="SendMessage" style="visibility: hidden;" class="hidden-input">
+
+            <input type="text" placeholder="new message" class="text-input" name="Content" id="text-input" value="" onfocus="myFunction" autocomplete="off" >
+
+            @* <input type="submit" value="Send" id="sendButton" > *@
+            <button type="submit" id="sendButton"><span class="material-symbols-outlined" >
+send
+</span></button>
+        </form>
+    </div>
+    <div class="messages">
         @foreach (var message in Model.Messages)
         {
             if (message.FromUser == true)
             {
-                <div class="card text-white bg-primary mb-3" style="max-width: 25rem;">
-                    <div class="card-header">@message.DateSent</div>
-                    <div class="card-body">
-                        <h5 class="card-title">@Model.Messages.FirstOrDefault().Account.AccountNumber</h5>
-                        <p class="card-text">@message.Content</p>
+                <div class="user-message" >
+                    <div class="header">@message.DateSent</div><br>
+                    <div class="body">
+                        <p class="text">@message.Content</p>
                     </div>
                 </div>
             }
             else
             {
-                <div style="margin-left: 400px;">
-                    <div class="card text-white bg-success mb-3" style="max-width: 26rem;">
-                        <div class="card-header">@message.DateSent</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Council</h5>
-                            <p class="card-text">@message.Content</p>
-                        </div>
+                <div class="council-message" >
+                    <div class="time">@message.DateSent</div><br>
+                    <div class="body">
+                        <p class="text">@message.Content</p>
                     </div>
                 </div>
             }
         }
-    </div>
-
-    <div class="col-xs-6 ">
-        <h1>New Message</h1>
-        @* <form action="/Home/SendMessage/?id=@Model.Messages.FirstOrDefault().Account.AccountID" method="POST">
-            <input type="text" id="userInput" placeholder="From" value="Council">
-            <textarea id="message" placeholder="Text Message" cols="30" rows="10"></textarea>
-            <input type="submit" id="sendButton" value="submit">
-        </form> *@
-
-        <Label text="From: "></Label>
-        <input type="text" id="userInput" placeholder="From" value="Council" > <br><br>
-        <form action="/Home/SendPrivateMessage" method="post">
-            <input type="text" name="AccountID" value="@Model.Messages.FirstOrDefault().Account.AccountID" asp-controller="Home" asp-action="SendMessage" style="visibility: hidden;">
-            <input type="text" name="Content" value="">
-            <input type="submit" id="sendButton"  >
-        </form>
     </div>
 </div>
 

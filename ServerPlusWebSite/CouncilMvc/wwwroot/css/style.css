@@ -1,0 +1,93 @@
+.container-m {
+    background-color: #EBF0F3;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    height: max-content;
+}
+
+.user-message, .council-message {
+    color: black;
+    width: 75%;
+    padding: 5px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.user-message {
+    background-color: #fff;
+    float: left;
+}
+
+.user-message .header {
+    color: #333;
+    float: right;
+}
+
+.user-message .title {
+    color: blueviolet;
+}
+
+.user-message .title span {
+    font-size: 14px;
+}
+
+.user-message .text {
+    font-size: small;
+}
+
+.council-message {
+    background-color: #00A94E;
+    float: right;
+}
+
+.council-message .time {
+    color: #333;
+    float: right;
+}
+
+.input-message {
+    width: 100%;
+    display: inline-block;
+}
+
+.input-message form {
+    padding: 4px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 13px;
+}
+
+.input-message .hidden-input {
+    width: 0px;
+}
+
+.input-message .text-input {
+    border-style: none;
+    float: left;
+    width: 80%;
+}
+
+.input-message .text-input:focus {
+    border-style: none;
+    outline-style: none;
+}
+
+.input-message #sendButton {
+    float: right;
+    border-style: none;
+    border-radius: 30px;
+}
+
+.input-message #sendButton span {
+    color:#00A94E;
+    
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 30,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
