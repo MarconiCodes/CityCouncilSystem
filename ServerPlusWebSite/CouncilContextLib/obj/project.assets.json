@@ -1270,39 +1270,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lenovo\\.nuget\\packages\\": {},
-    "C:\\Program Files\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\a\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\users\\lenovo\\desktop\\hit200 project\\CouncilContextLib\\CouncilContextLib.csproj",
+      "projectUniqueName": "C:\\Users\\a\\OneDrive\\Documents\\GitHub\\CityCouncilSystem\\ServerPlusWebSite\\CouncilContextLib\\CouncilContextLib.csproj",
       "projectName": "CouncilContextLib",
-      "projectPath": "C:\\users\\lenovo\\desktop\\hit200 project\\CouncilContextLib\\CouncilContextLib.csproj",
-      "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\users\\lenovo\\desktop\\hit200 project\\CouncilContextLib\\obj\\",
+      "projectPath": "C:\\Users\\a\\OneDrive\\Documents\\GitHub\\CityCouncilSystem\\ServerPlusWebSite\\CouncilContextLib\\CouncilContextLib.csproj",
+      "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\a\\OneDrive\\Documents\\GitHub\\CityCouncilSystem\\ServerPlusWebSite\\CouncilContextLib\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
-        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\users\\lenovo\\desktop\\hit200 project\\CouncilEntitiesLib\\CouncilEntitiesLib.csproj": {
-              "projectPath": "C:\\users\\lenovo\\desktop\\hit200 project\\CouncilEntitiesLib\\CouncilEntitiesLib.csproj"
+            "C:\\Users\\a\\OneDrive\\Documents\\GitHub\\CityCouncilSystem\\ServerPlusWebSite\\CouncilEntitiesLib\\CouncilEntitiesLib.csproj": {
+              "projectPath": "C:\\Users\\a\\OneDrive\\Documents\\GitHub\\CityCouncilSystem\\ServerPlusWebSite\\CouncilEntitiesLib\\CouncilEntitiesLib.csproj"
             }
           }
         }
@@ -1337,7 +1332,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

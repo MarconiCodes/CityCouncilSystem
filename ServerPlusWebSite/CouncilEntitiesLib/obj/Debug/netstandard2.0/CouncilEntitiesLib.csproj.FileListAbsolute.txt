@@ -8,3 +8,13 @@ C:\Users\lenovo\Desktop\HIT200 Project\CouncilEntitiesLib\obj\Debug\netstandard2
 C:\Users\lenovo\Desktop\HIT200 Project\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\Desktop\HIT200 Project\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.dll
 C:\Users\lenovo\Desktop\HIT200 Project\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.pdb
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\bin\Debug\netstandard2.0\CouncilEntitiesLib.deps.json
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\bin\Debug\netstandard2.0\CouncilEntitiesLib.dll
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\bin\Debug\netstandard2.0\CouncilEntitiesLib.pdb
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.csproj.AssemblyReference.cache
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.AssemblyInfoInputs.cache
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.AssemblyInfo.cs
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.csproj.CoreCompileInputs.cache
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.dll
+C:\Users\a\OneDrive\Documents\GitHub\CityCouncilSystem\ServerPlusWebSite\CouncilEntitiesLib\obj\Debug\netstandard2.0\CouncilEntitiesLib.pdb

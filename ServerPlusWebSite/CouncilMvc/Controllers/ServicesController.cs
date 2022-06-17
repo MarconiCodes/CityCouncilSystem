@@ -87,7 +87,7 @@ namespace CouncilMvc.Controllers
             User user = db.Users.SingleOrDefault(u => u.AccountID == account.AccountID);
             Manex.Shared.Payment receipt = new Manex.Shared.Payment();
 
-            paynow = new Paynow("13552", "a1e6a451-61f4-49b0-ad7f-48b5b2772785");
+            paynow = new Paynow("paynow-key", "paynow-ID");//Removed the actual key and ID as those are private 
             var payment = paynow.CreatePayment("Test Transaction", email);
             payment.Add(accountNumber, amount);
             string pollurl;
@@ -161,7 +161,7 @@ namespace CouncilMvc.Controllers
         {
             //string basePath = $@"{Directory.GetCurrentDirectory()}\..\Statements";
             string basePath = "C:\\Users\\lenovo\\Desktop\\HIT200 Project\\CouncilMvc\\..\\Statements";
-            string baseUrl = $"https://172.20.10.7:5001/Services";
+            string baseUrl = $"https://172.20.10.6:5001/Services";
             int currentDay = DateTime.Now.Day;
             string currentMonth = monthDict[DateTime.Now.Month];
             List<Statement> statements;

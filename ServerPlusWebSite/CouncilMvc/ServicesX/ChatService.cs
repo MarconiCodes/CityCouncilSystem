@@ -11,7 +11,7 @@ namespace CouncilMvc.ServicesX
         public ChatService()
         {
             //connection = new HubConnectionBuilder().WithUrl("https://172.20.10.7:5001/ChatHub").Build();
-            connection = new HubConnectionBuilder().WithUrl("https://172.20.10.7:5001/ChatHub", (opts) =>
+            connection = new HubConnectionBuilder().WithUrl("https://172.20.10.6:5001/ChatHub", (opts) =>
             {
                 opts.HttpMessageHandlerFactory = (message) =>
                 {
